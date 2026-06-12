@@ -4,7 +4,7 @@ return [
     'paths' => ['api/*', 'sanctum/csrf-cookie'],
     'allowed_methods' => ['*'],
     'allowed_origins' => ['http://localhost:4321', 'https://titipin.com', 'http://titipin.com'],
-    'allowed_origins_patterns' => [],
+    'allowed_origins_patterns' => ['#^http://localhost:\d+$#'],
     'allowed_headers' => ['*'],
     'exposed_headers' => [],
     'max_age' => 0,
